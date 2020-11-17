@@ -36,6 +36,48 @@ app.get("/api/notes", function(err, res) {
     res.json(notesData);
   });
 
+  app.get("/api/notes", function(err, res) {
+    try {
+      // reads the notes from json file
+      notesData = fs.readFileSync("db/db.json", "utf8");
+      // parse it so notesData is an array of objects
+      notesData = JSON.parse(notesData);
+  
+      // error handling
+    } catch (err) {
+      console.log("\n error (in app.get.catch):");
+      console.log(err);
+    }
+    //   send objects to the browser
+    res.json(notesData);
+  });
+  
+  // writes the new note to the json file
+  app.post("/api/notes", function(req, res) {
+    try {
+      // reads the json file
+      notesData = fs.readFileSync("./db/db.json", "utf8");
+      console.log(notesData);
+  
+      // parse the data to get an array of objects
+      notesData = JSON.parse(notesData);
+      // add the new note to the array of note objects
+      notesData.push(req.body); // req.body - user input
+      // make it string(stringify)so you can write it to the file
+      notesData = JSON.stringify(notesData);
+      // writes the new note to file
+      fs.writeFile("./db/db.json", notesData, "utf8", function(err) {
+        // error handling
+        if (err) throw err;
+      });
+      // changeit back to an array of objects & send it back to the browser(client)
+      res.json(JSON.parse(notesData));
+  
+      // error Handling
+    } catch (err) {
+      throw err;
+    }
+  });
 
 // Web page when the Get started button is clicked
 app.get("/notes", function(req, res) {
