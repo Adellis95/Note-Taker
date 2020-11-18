@@ -1,5 +1,48 @@
 # Note-Taker
 
+[![GitHub](https://img.shields.io/badge/Made%20by-%40Adellis95-orange)](https://github.com/Adellis95/Note-Taker)
+[![Heroku](https://img.shields.io/badge/Heroku-Link-red)](https://note-takeradellis95.herokuapp.com/notes)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Description
+
+words
+
+## Table of Contents
+
+- [Description](#description)
+- [User-Story](#user-story)
+- [Demos](#demos)
+- [Installation](#installation)
+- [License](#license)
+
+## User Story
+
+AS A user, I want to be able to write and save notes
+
+I WANT to be able to delete notes I've written before
+
+SO THAT I can organize my thoughts and keep track of tasks I need to complete
+
+## Demos
+
+![Test]()
+
+![Demo]()
+
+## Installation
+
+Clone Repo then run:
+
+- Run `npm install` to install dependencies
+- Run `node server.js` for the localhost to listen for the server port
+- Open `localhost:PORT` in browser to access Note-Taker application
+- Run `killall node` on Windows or `control+C` on Mac to stop the server
+
+## Features
+
+words
+
 ## License
 
 MIT License
