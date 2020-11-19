@@ -6,7 +6,7 @@
 
 ## Description
 
-words
+This application can be used to write, save, and delete notes in a fast and efficient process. The frontend has already been created and it uses express backend and save and retrieve note data from a JSON file.
 
 ## Table of Contents
 
