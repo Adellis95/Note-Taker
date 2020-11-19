@@ -26,9 +26,9 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ## Demos
 
-![Test]()
+![Demo](Demo.gif)
 
-![Demo]()
+![Heroku Test](Heroku.gif)
 
 ## Installation
 
@@ -38,10 +38,6 @@ Clone Repo then run:
 - Run `node server.js` for the localhost to listen for the server port
 - Open `localhost:PORT` in browser to access Note-Taker application
 - Run `killall node` on Windows or `control+C` on Mac to stop the server
-
-## Features
-
-words
 
 ## License
 
